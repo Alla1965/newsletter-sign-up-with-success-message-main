@@ -3,6 +3,9 @@ const form = document.querySelector(".form");
 const emailInput = document.querySelector(".form-input");
 const modal = document.querySelector("#modal");
 const closeBtn = document.querySelector(".modal-btn");
+const emailSpan = document.getElementById("email-address");
+const userEmail = "user@example.com";
+emailSpan.textContent = userEmail;
 // Коли сторінка повністю завантажилася
 // --- Підставляємо збережений email при завантаженні ---
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // --- Функції ---
 function openModal() {
   modal.classList.add("active");
+  closeBtn.focus();
 }
 
 function closeModal() {

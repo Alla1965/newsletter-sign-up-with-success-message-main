@@ -18,10 +18,10 @@
   </head>
 
   <body>
+    <h1 class="main-title">Main title</h1>
     <main class="container">
       <div class="wrapper">
         <section class="hero">
-          <h1 class="main-title">Main title</h1>
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -49,8 +49,10 @@
         >
           <section class="inform">
             <h2 class="inform-h2 title">Stay updated!</h2>
-            <ul class="inform-list text">
+            <p class="text">
               Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="inform-list text">
               <li class="inform-item text">
                 <img
                   class="sign"
@@ -106,7 +108,15 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div id="modal" class="modal">
+    <div
+      id="modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+      tabindex="-1"
+    >
       <section class="modal-content">
         <img
           class="modal-sign"
@@ -116,10 +126,13 @@
           height="64"
         />
         <h2 class="modal-h2 title">Thanks for subscribing!</h2>
-        <p class="modal-par text">
+        <p id="modal-desc" class="modal-par text">
           A confirmation email has been sent to
-          <span class="text-span">ash@loremcompany.com.</span> Please open it
-          and click the button inside to confirm your subscription.
+          <span class="text-span" aria-live="polite" id="email-address"
+            >ash@loremcompany.com.</span
+          >
+          Please open it and click the button inside to confirm your
+          subscription.
         </p>
         <button class="modal-btn text form-btn">Dismiss message</button>
       </section>
