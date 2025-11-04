@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="wrapper">
+        <section class="hero">
+          <h1 class="main-title">Main title</h1>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="assets/images/illustration-sign-up-desktop.svg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="assets/images/illustration-sign-up-tablet.svg"
+            />
+            <img
+              class="hero-image"
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt="Sign up illustration"
+            />
+          </picture>
+        </section>
+
+        <!-- Sign-up form start -->
+        <form
+          class="form"
+          name="email-address"
+          autocomplete="on"
+          action="#"
+          method="post"
+        >
+          <section class="inform">
+            <h2 class="inform-h2 title">Stay updated!</h2>
+            <ul class="inform-list text">
+              Join 60,000+ product managers receiving monthly updates on:
+              <li class="inform-item text">
+                <img
+                  class="sign"
+                  src="assets/images/icon-list.svg"
+                  alt="sign"
+                  width="21"
+                  height="21"
+                />
+                <p class="text">Product discovery and building what matters</p>
+              </li>
+              <li class="inform-item text">
+                <img
+                  class="sign"
+                  src="assets/images/icon-list.svg"
+                  alt="sign"
+                  width="21"
+                  height="21"
+                />
+                <p class="text">Measuring to ensure updates are a success</p>
+              </li>
+              <li class="inform-item text">
+                <img
+                  class="sign"
+                  src="assets/images/icon-list.svg"
+                  alt="sign"
+                  width="21"
+                  height="21"
+                />
+                <p class="text">And much more!</p>
+              </li>
+            </ul>
+          </section>
+          <section class="input-block">
+            <label for="email" class="form-label">
+              Email address
+              <input
+                id="email"
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="email@company.com"
+                autocomplete="email"
+                autofocus
+              />
+            </label>
+            <button class="form-btn text" type="submit">
+              Subscribe to monthlynewsletter
+            </button>
+          </section>
+        </form>
+      </div>
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div id="modal" class="modal">
+      <section class="modal-content">
+        <img
+          class="modal-sign"
+          src="assets/images/icon-list.svg"
+          alt="sign"
+          width="64"
+          height="64"
+        />
+        <h2 class="modal-h2 title">Thanks for subscribing!</h2>
+        <p class="modal-par text">
+          A confirmation email has been sent to
+          <span class="text-span">ash@loremcompany.com.</span> Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button class="modal-btn text form-btn">Dismiss message</button>
+      </section>
+    </div>
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="/assets/js/update.js" type="module"></script>
+  </body>
+</html>
